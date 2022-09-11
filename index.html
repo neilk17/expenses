@@ -1,43 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Expenses chart component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./sass/styles.css">
+    <title>Neil Kanakia | Expenses chart component</title>
+  </head>
+  <body>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <header class="header">
+      <p class="balance">My balance<br><span class="balance-amount">$921.48</span></p>
+      <img class="logo" src="./images/logo.svg" alt="logo">
+    </header>
 
-  My balance
-  $921.48
-
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <main class="spending">
+      <h1 class="title">Spending - Last 7 days</h1>
+      <div class="graph">
+        <div class="day">
+          <div id="mon-amount" class="amount"></div>
+          <div id="mon-bar" class="bar"></div>
+          <p>mon</p>
+        </div>
+        <div class="day">
+          <div id="tue-amount" class="amount"></div>
+          <div id="tue-bar"class="bar"></div>
+          <p>tue</p>
+        </div>
+        <div class="day">
+          <div id="wed-amount" class="amount">$17.45</div>
+          <div id="wed-bar"class="bar"></div>
+          <p>wed</p>
+        </div>
+        <div class="day">
+          <div id="thu-amount" class="amount">$17.45</div>
+          <div id="thu-bar"class="bar"></div>
+          <p>thu</p>
+        </div>
+        <div class="day">
+          <div id="fri-amount" class="amount">$17.45</div>
+          <div id="fri-bar"class="bar"></div>
+          <p>fri</p>
+        </div>
+        <div class="day">
+          <div id="sat-amount" class="amount">$17.45</div>
+          <div id="sat-bar"class="bar"></div>
+          <p>sat</p>
+        </div>
+        <div class="day">
+          <div id="sun-amount" class="amount">$17.45</div>
+          <div id="sun-bar" class="bar"></div>
+          <p>sun</p>
+        </div>
+      </div>
+      <hr>
+      <div class="total">
+        <p class="total-monthly">Total this month<br><span class="total-amount">$478.33</span></p>
+        <p class="total-percentage"><span class="spending-percentage">+2.4%</span><br>from last month</p>
+      </div>
+    </main>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="http://neilkanakia.xyz/">Neil Kanakia</a>.
+    </div>
+    <script type="text/javascript" src="data.json"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
 </html>

@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+:root {
+  --soft-red: #ec775f;
+  --cyan: #76b5bc;
+  --dark-brown: #382314;
+  --medium-brown: #93867b;
+  --cream: #f8e9dd;
+  --very-pale-orange: #fffaf5;
+}
+
+body {
+  background-color: var(--cream);
+  font-size: 18px;
+  font-family: "DM Sans", sans-serif;
+  margin: 0;
+}
+
+.header {
+  align-items: center;
+  background-color: var(--soft-red);
+  border-radius: 7px;
+  box-sizing: border-box;
+  color: var(--very-pale-orange);
+  display: flex;
+  justify-content: space-between;
+  width: 340px;
+  height: 100px;
+  margin-top: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 1rem;
+  padding: 20px;
+}
+.header .balance {
+  font-size: 1rem;
+}
+.header .balance-amount {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.header .logo {
+  width: 60px;
+}
+
+.spending {
+  background-color: var(--very-pale-orange);
+  border-radius: 7px;
+  box-sizing: border-box;
+  color: var(--dark-brown);
+  width: 340px;
+  height: 420px;
+  margin: 1rem auto;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.spending .title {
+  font-size: 1.5rem;
+}
+.spending .total {
+  color: var(--medium-brown);
+  display: flex;
+  font-size: 1rem;
+  justify-content: space-between;
+}
+.spending .total .total-monthly .total-amount {
+  color: var(--dark-brown);
+  font-size: 2rem;
+  font-weight: 700;
+}
+.spending .total .total-percentage {
+  text-align: right;
+  margin-top: 2rem;
+}
+.spending .total .total-percentage .spending-percentage {
+  color: var(--dark-brown);
+  font-weight: 700;
+}
+.spending .graph {
+  box-sizing: border-box;
+  display: flex;
+  height: 220px;
+  width: 340px;
+  color: var(--dark-brown);
+}
+.spending .graph .day {
+  margin-right: 15px;
+  align-self: flex-end;
+}
+.spending .graph .day p {
+  color: var(--medium-brown);
+  margin-top: 10px;
+  font-size: 0.75rem;
+  text-align: center;
+}
+.spending .graph .day .bar {
+  border-radius: 5px;
+  background-color: var(--soft-red);
+  height: 55px;
+  width: 30px;
+}
+.spending .graph .day .bar:hover {
+  background-color: var(--cyan);
+  cursor: pointer;
+}
+.spending .graph .day .amount {
+  background-color: var(--dark-brown);
+  border-radius: 5px;
+  color: white;
+  display: none;
+  font-size: 0.5rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  padding: 5px;
+}
+.spending .graph .day:last-child {
+  margin-right: 0%;
+}
+.spending .graph .day #mon-bar {
+  height: 55px;
+}
+.spending .graph .day #tue-bar {
+  height: 100px;
+}
+.spending .graph .day #wed-bar {
+  height: 145;
+}
+.spending .graph .day #thu-bar {
+  height: 85px;
+}
+.spending .graph .day #fri-bar {
+  height: 60px;
+}
+.spending .graph .day #sat-bar {
+  height: 121px;
+}
+.spending .graph .day #sun-bar {
+  height: 73px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--dark-brown);
+}
+
+@media only screen and (min-width: 600px) {
+  .header {
+    border-radius: 1rem;
+    margin-top: 183px;
+    padding: 30px;
+    width: 540px;
+  }
+  .spending {
+    border-radius: 1rem;
+    height: 510px;
+    width: 540px;
+    padding: 30px;
+  }
+  .spending .graph {
+    height: 280px;
+  }
+  .spending .graph .day .bar {
+    width: 55px;
+  }
+}/*# sourceMappingURL=styles.css.map */
