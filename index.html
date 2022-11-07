@@ -2,69 +2,44 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="stylesheet" href="./sass/styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <title>Neil Kanakia | Expenses chart component</title>
   </head>
   <body>
-
-    <header class="header">
-      <p class="balance">My balance<br><span class="balance-amount">$921.48</span></p>
-      <img class="logo" src="./images/logo.svg" alt="logo">
-    </header>
-
-    <main class="spending">
-      <h1 class="title">Spending - Last 7 days</h1>
-      <div class="graph">
-        <div class="day">
-          <div id="mon-amount" class="amount"></div>
-          <div id="mon-bar" class="bar"></div>
-          <p>mon</p>
+    <main class="flex column">
+        <!-- <div class="loader flex center justify"> -->
+        <!--     <div class="loader flex center justify"> -->
+        <!--         <img src="./images/logo.svg" alt=""> -->
+        <!--     </div> -->
+        <!-- </div> -->
+        <div class="balance-container flex card center between">
+            <img src="./images/logo.svg" alt="">
+            <div class="balance-container__details">
+                <p>My balance</p>
+                <p>$921.48</p>
+            </div>
         </div>
-        <div class="day">
-          <div id="tue-amount" class="amount"></div>
-          <div id="tue-bar"class="bar"></div>
-          <p>tue</p>
+        <div class="chart-container card flex column">
+           <h1>Spending - Last 7 days</h1>
+           <div class="statsList" id="statsList">
+            <!-- stats here -->
+           </div>
+           <div class="chart-container__seperator"></div>
+           <div class="chart-container__info flex between">
+            <div class="chart-container__info--current">
+                <p>Total this month</p>
+                <p>$478.33</p>
+            </div>                
+            <div class="chart-container__info--last">
+                <p>+2.4%</p>
+                <p>from last month</p>
+            </div>                
+           </div>
         </div>
-        <div class="day">
-          <div id="wed-amount" class="amount">$17.45</div>
-          <div id="wed-bar"class="bar"></div>
-          <p>wed</p>
-        </div>
-        <div class="day">
-          <div id="thu-amount" class="amount">$17.45</div>
-          <div id="thu-bar"class="bar"></div>
-          <p>thu</p>
-        </div>
-        <div class="day">
-          <div id="fri-amount" class="amount">$17.45</div>
-          <div id="fri-bar"class="bar"></div>
-          <p>fri</p>
-        </div>
-        <div class="day">
-          <div id="sat-amount" class="amount">$17.45</div>
-          <div id="sat-bar"class="bar"></div>
-          <p>sat</p>
-        </div>
-        <div class="day">
-          <div id="sun-amount" class="amount">$17.45</div>
-          <div id="sun-bar" class="bar"></div>
-          <p>sun</p>
-        </div>
-      </div>
-      <hr>
-      <div class="total">
-        <p class="total-monthly">Total this month<br><span class="total-amount">$478.33</span></p>
-        <p class="total-percentage"><span class="spending-percentage">+2.4%</span><br>from last month</p>
-      </div>
     </main>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="http://neilkanakia.xyz/">Neil Kanakia</a>.
-    </div>
-    <script type="text/javascript" src="data.json"></script>
     <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
