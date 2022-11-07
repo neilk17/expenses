@@ -1,4 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"); /** Component animation **/
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"); /* Colors */
+/* Primary */
+/* Neutral */
+/* Hover */
+/** Component animation **/
 @keyframes appear {
   0% {
     transform: translateY(30px);
@@ -17,10 +21,12 @@
     transform: rotate(360deg);
   }
 }
-/* Colors */
-/* Primary */
-/* Neutral */
-/* Hover */
+@keyframes dis {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 * {
   font-family: "DM Sans", sans-serif;
 }
@@ -93,7 +99,7 @@ main {
   max-width: 90%;
 }
 main .balance-container {
-  animation: appear 0.3s ease 0.5s forwards;
+  animation: appear 1s ease 3.5s forwards;
   opacity: 0;
   background-color: hsl(10deg, 79%, 65%);
   color: #FFFBF6;
@@ -111,6 +117,8 @@ main .balance-container p:nth-child(2):hover {
   cursor: pointer;
 }
 main .chart-container {
+  animation: appear 2s ease 4s forwards;
+  opacity: 0;
   background-color: #FFFBF6;
   border-radius: 20px;
 }

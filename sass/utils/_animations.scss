@@ -19,3 +19,10 @@
         transform: rotate(360deg);
     }
 }
+
+@keyframes dis {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}

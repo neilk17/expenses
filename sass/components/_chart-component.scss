@@ -3,7 +3,7 @@ main {
     margin: 5em auto;
     max-width: 90%;
     .balance-container {
-        animation: appear 0.3s ease 0.5s forwards;
+        animation: appear 1s ease 3.5s forwards;
         opacity: 0;
         background-color: $softRed;
         color: $cardWhite;
@@ -23,6 +23,8 @@ main {
         }
     }
     .chart-container {
+        animation: appear 2s ease 4s forwards;
+        opacity: 0;
         background-color: $cardWhite;
         border-radius: 20px;
         .statsList {
